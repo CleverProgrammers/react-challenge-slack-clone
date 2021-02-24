@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import { sidebarItemsData } from '../data/SidebarData'
+import { ChannelData } from '../data/ChannelData'
 import AddIcon from '@material-ui/icons/Add';
 
 function Sidebar() {
@@ -34,12 +35,16 @@ function Sidebar() {
                     <AddIcon />
                 </NewChannelContainer>
                 <ChannelsList>
-                    <Channel>
-                        # Channel 1
-                    </Channel>
-                    <Channel>
-                        # Channel 2
-                    </Channel>
+                    {
+                        ChannelData.map((item, i) => {
+                            return (
+                                <Channel>
+                                    # {item.name}
+                                </Channel>
+                            )
+                        })
+                    }
+                    
                 </ChannelsList>
             </ChannelsContainer>
             
@@ -51,9 +56,8 @@ export default Sidebar
 
 
 const Container = styled.div`
-    background: #3F0E40;
-
-`
+  background: #016d7e;
+`;
 
 const WorkspaceContainer = styled.div`
     color: white;
@@ -68,18 +72,18 @@ const WorkspaceContainer = styled.div`
 const Name = styled.div``
 
 const NewMessage = styled.div`
-    width: 36px;
-    height: 36px;
-    background: white;
-    color: #3F0E40;
-    fill: #3F0E40;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    margin-right: 20px;
-    cursor: pointer;
-`
+  width: 36px;
+  height: 36px;
+  background: white;
+  color: #016d7e;
+  fill: #016d7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 20px;
+  cursor: pointer;
+`;
 
 const MainChannels = styled.div`
     padding-top: 20px;

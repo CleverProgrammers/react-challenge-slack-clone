@@ -1,11 +1,13 @@
 import React from 'react'
+import ChatHeader from "./ChatHeader";
 
 function Login() {
     return (
-        <div>
-            Login
-        </div>
-    )
+      <div>
+        <ChatHeader />
+        Login
+      </div>
+    );
 }
 
 export default Login

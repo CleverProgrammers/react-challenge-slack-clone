@@ -32,19 +32,19 @@ export default Header
 
 
 const Container = styled.div`
-    background: #350d36;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    box-shadow: 0 1px 0 0 rgb(255 255 255 / 10%);
-`
+  background: #84bac0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 1px 0 0 rgb(255 255 255 / 10%);
+`;
 
 const Main = styled.div`
     display: flex;
     margin-right: 16px;
-    margin-left 16px;
+    margin-left: 16px;
 `
 
 const SearchContainer = styled.div`
