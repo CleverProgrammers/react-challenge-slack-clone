@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function ChatMessage() {
+function ChatMessage({ text, name, image, timestamp }) {
     return (
         <Container>
             <UserAvatar>
-                <img src="https://randomuser.me/api/portraits/women/25.jpg" />
+                <img src={image} />
             </UserAvatar>
             <MessageContent>
                 <Name>
-                    Rafeh Qazi
-                    <span>2/23/2021 11:13:55 AM</span>
+                    {name}
+                    <span>{new Date(timestamp.toDate()).toUTCString()}</span>
                 </Name>
                 <Text>
-                    This is the best Challenge
+                    {text}
                 </Text>
             </MessageContent>
         </Container>
