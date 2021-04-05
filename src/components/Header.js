@@ -18,7 +18,7 @@ function Header() {
             </Main>
             <UserContainer>
                 <Name>
-                    Nazariy
+                    Carlos
                 </Name>
                 <UserImage>
                     <img src="https://i.imgur.com/6VBx3io.png" />
