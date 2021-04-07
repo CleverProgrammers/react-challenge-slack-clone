@@ -3,13 +3,16 @@ import styled from 'styled-components'
 import InfoOutlinedIcon from "@material-ui/icons/InfoOutlined";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 
-const ChatHeader = () => {
+const ChatHeader = ({ channel }) => {
+
   return (
     <>
       <Header>
         <Channel>
           <ChannelName>
-            # clever
+            # {
+              channel&& channel.name 
+            }
             </ChannelName>
           {/* <StarBorderIcon /> */}
           <ChannelInfo>
